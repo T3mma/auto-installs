@@ -22,37 +22,50 @@ echo -e "
 read n
 
 case $n in
-        1) clear
+1)
+   clear
 
- rm -rf /root/install.sh && wget https://raw.githubusercontent.com/vpsvip7/1s/main/install.sh && chmod 777 install.sh && ./install.sh
-            echo -ne "\n\033[1;31mListo \033[1;33mComando menu  \033[1;32mPara terminar de instalar!\033[0m"; read
-            udp
-           ;;
-        2) clear
-        rm -rf /root/udp
-           sleep 5 
-            ;;
-        3) clear
-            ./verconectados.sh
-             sleep 6
-           ;; 
-        4) clear
-     rm -rf /root/UDPserver.sh &&
-             wget https://raw.githubusercontent.com/vpsvip7/2d/main/UDPserver.sh && chmod 777 UDPserver.sh && ./UDPserver.sh
-            echo -ne "\n\033[1;31mEnter \033[1;33m Para volver al  \033[1;32mMenu!\033[0m"; read
-            udp
-           ;;
-        5) clear
-        wget https://raw.githubusercontent.com/vpsvip7/1s/main/udp-custom.sh -O install-udp && chmod +x install-udp && ./install-udp
-        echo -ne "\n\033[1;31mEnter \033[1;33m Para volver al  \033[1;32mMenu!\033[0m"; read
-         ;;
-        6) udp
-           ;;
-        7)     git clone https://github.com/Redjoker256/Udpcustom.git && cd Udpcustom && chmod +x install.sh && ./install.sh 
-           menu  ;;
-         8)  menu
-            ;;
-          9)  exit
-             ;;
-        *) echo "Opción Incorrecta";;
+   rm -rf /root/install.sh && wget https://raw.githubusercontent.com/vpsvip7/1s/main/install.sh && chmod 777 install.sh && ./install.sh
+   echo -ne "\n\033[1;31mListo \033[1;33mComando menu  \033[1;32mPara terminar de instalar!\033[0m"
+   read
+   udp
+   ;;
+2)
+   clear
+   rm -rf /root/udp
+   sleep 5
+   ;;
+3)
+   clear
+   ./verconectados.sh
+   sleep 6
+   ;;
+4)
+   clear
+   rm -rf /root/UDPserver.sh &&
+      wget https://raw.githubusercontent.com/vpsvip7/2d/main/UDPserver.sh && chmod 777 UDPserver.sh && ./UDPserver.sh
+   echo -ne "\n\033[1;31mEnter \033[1;33m Para volver al  \033[1;32mMenu!\033[0m"
+   read
+   udp
+   ;;
+5)
+   clear
+   wget https://raw.githubusercontent.com/vpsvip7/1s/main/udp-custom.sh -O install-udp && chmod +x install-udp && ./install-udp
+   echo -ne "\n\033[1;31mEnter \033[1;33m Para volver al  \033[1;32mMenu!\033[0m"
+   read
+   ;;
+6)
+   udp
+   ;;
+7)
+   git clone https://github.com/Redjoker256/Udpcustom.git && cd Udpcustom && chmod +x install.sh && ./install.sh
+   menu
+   ;;
+8)
+   menu
+   ;;
+9)
+   exit
+   ;;
+*) echo "Opción Incorrecta" ;;
 esac
